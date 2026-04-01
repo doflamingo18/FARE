@@ -122,3 +122,46 @@ nav a:hover::after {
         text-align: center;
         
 }
+.menu-toggle {
+    display: none;
+    font-size: 28px;
+    color: white;
+    cursor: pointer;
+}
+
+/* default nav-links */
+.nav-links {
+    display: flex;
+    gap: 40px;
+}
+
+/* mobile view */
+@media (max-width: 768px) {
+    nav {
+        justify-content: space-between;
+        padding: 15px 20px;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-links {
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.9);
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 20px 0;
+
+        display: none;
+        /* hidden by default */
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+}

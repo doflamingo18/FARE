@@ -30,3 +30,9 @@ const observer2 = new IntersectionObserver((entries) => {
 }, { threshold: 0.6 });
 
 sections.forEach(section => observer2.observe(section));
+const menuToggle = document.querySelector(".menu-toggle");
+const navLinksContainer = document.querySelector(".nav-links");
+
+menuToggle.addEventListener("click", () => {
+    navLinksContainer.classList.toggle("active");
+});
