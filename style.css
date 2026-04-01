@@ -1,0 +1,124 @@
+.top {
+    background-color: gray;
+    display: flex;
+    flex-direction: column;
+    margin-top: 60px;
+    
+}
+
+.top .a {
+    background-image: url(Gemini_Generated_Image_8vu93m8vu93m8vu9.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.top .b {
+    background-image: url(eren-yeager-amoled-3840x2160-16775.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+.top .b.visible{
+    opacity: 1;
+}
+
+.top .c {
+    background-color: brown;
+    background-image: url(sukuna-electric-3840x2160-22504.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        opacity: 0;
+            transition: opacity 1s ease;
+}
+.top .c.visible {
+    opacity: 1;
+}
+
+.top .d {
+    background-color: yellow;
+    background-image: url(spider-man-across-3840x2160-11476.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        opacity: 0;
+            transition: opacity 1s ease;
+}
+.top .d.visible {
+    opacity: 1;
+}
+
+/* one place to control all heights */
+.top .a,
+.top .b,
+.top .c,
+.top .d {
+    width: 100%;
+    height: 100vh;
+}
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+    font-family: 'Orbitron', sans-serif;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+
+}
+nav a.active {
+    color: #f5ff3b;
+        text-shadow:
+            0 0 5px #f5ff3b,
+            0 0 10px #f5ff3b,
+            0 0 20px #f5ff3b,
+            0 0 40px #f5ff3b;
+}
+nav a {
+    position: relative;
+}
+
+nav a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0%;
+    height: 2px;
+    background: #00eaff;
+    box-shadow: 0 0 5px #00eaff, 0 0 15px #00eaff;
+    transition: 0.3s;
+}
+
+nav a:hover::after {
+    width: 100%;
+
+
+}
+.top .a .fare{
+    color: aliceblue;
+    font-size: 80px;
+    text-align: center;
+    margin-top: 580px;
+}
+.top .a .legacy{
+    color: rgb(225, 178, 4);
+        font-size: 30px;
+        text-align: center;
+        
+}
